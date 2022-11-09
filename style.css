@@ -70,16 +70,17 @@ h1, h2, span{
 main > section {
   padding: 20px 10px;
 }
-.container-small > .column {
-    gap: 30px;
+.container-small > .row {
+    display: flex;
+    justify-content: space-between;
     margin: 30px 0;
 }
-.column .plane{
+.row .plane{
     border: 1px dashed black;
-    flex-basis: 40%;
+    flex-basis: 30%;
     min-height: 300px;
 
 }
-.stretch{
-    align-self: stretch;
+.row > .stretch{
+    flex-grow: 1;
 }
