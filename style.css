@@ -13,9 +13,13 @@ header{
     /* background-color: white; */
     border: 1px dashed black;
 }
+footer{
+    height: 500px;
+    background-color: black;
+}
 h1, h2, span{
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 30px ;
     background-color: blueviolet;
 }
 /* UTILITY */ 
@@ -53,15 +57,16 @@ h1, h2, span{
 .column{
     display: flex;
     justify-content: center;
+    min-height: 250px;
 }
 .column .col-large{
-    min-height: 250px ;
+    /* min-height: 350px ; */
     background-color: blue;
 
     flex-basis: 60%;
 }
 .column .col-small{
-    min-height: 250px ;
+    /* min-height: 250px ; */
     background-color: pink;
 
     flex-basis: 40%;
@@ -83,4 +88,62 @@ main > section {
 }
 .row > .stretch{
     flex-grow: 1;
+}
+/* card */
+.card{
+    border: 1px dashed red;
+    flex-basis: 30%;
+    min-height: 300px;
+
+}
+/* BLOCKS */
+.company{
+    margin: 0 -10px;
+    display: flex;
+    padding-bottom: 0;
+}
+.block{
+    border: 1px dashed black;
+    height: 400px;
+    flex-basis: calc(100% / 3);
+}
+.side{
+    display: flex;
+    flex-wrap: wrap;
+}
+.square{
+    background-color: pink;
+    border: 1px dashed violet;
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.gratis-test{
+    height: 300px;
+    background-color: rgb(180,208,231);
+}
+.gratis-test > .column{
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* QUESTIONS */
+.questions li{
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+    padding: 40px;
+}
+.questions ul{
+    border-top: 1px solid grey;
+}
+/* FOOTER */
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.foot > .foot-list{
+    height: 350px;
+    flex-basis: 20%;
+    border: 1px dashed red;
 }
