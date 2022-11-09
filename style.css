@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* UTILITY */ 
+/* GENERIC*/ 
 body{
     font-family: 'Open Sans', sans-serif;
 }
-/* GENERIC*/ 
+header{
+    height: 500px;
+
+    /* background-color: white; */
+    border: 1px dashed black;
+}
+h1, h2, span{
+    height: 100px;
+    margin-bottom: 30px;
+    background-color: blueviolet;
+}
+/* UTILITY */ 
 .container-large{
     width: 1200px;
     margin: 0 auto;
@@ -18,17 +28,11 @@ body{
     margin: 0 auto;
 }
 /* HEADER */
-header{
-    height: 500px;
-    background-color: white;
-
-    border: 1px dashed black;
-}
 .navbar{
     border: 1px dashed black;
     height: 80px;
     
-    /* background-color: white; */
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,13 +50,7 @@ header{
 
     background-color: rgb(180,208,231);
 }
-h1{
-    height: 100px;
-    margin-bottom: 10px;
-    background-color: blueviolet;
-}
 .column{
-    
     display: flex;
     justify-content: center;
 }
@@ -67,4 +65,21 @@ h1{
     background-color: pink;
 
     flex-basis: 40%;
+}
+/* MAIN */
+main > section {
+  padding: 20px 10px;
+}
+.container-small > .column {
+    gap: 30px;
+    margin: 30px 0;
+}
+.column .plane{
+    border: 1px dashed black;
+    flex-basis: 40%;
+    min-height: 300px;
+
+}
+.stretch{
+    align-self: stretch;
 }
