@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITY */ 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* GENERIC*/ 
+.container-large{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-small{
+    width: 1000px;
+    margin: 0 auto;
+}
