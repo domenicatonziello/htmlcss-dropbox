@@ -17,3 +17,54 @@ body{
     width: 1000px;
     margin: 0 auto;
 }
+/* HEADER */
+header{
+    height: 500px;
+    background-color: white;
+
+    border: 1px dashed black;
+}
+.navbar{
+    border: 1px dashed black;
+    height: 80px;
+    
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .nav-left, .nav-right{
+    /* border: 1px dashed black; */
+    background-color: orange;
+    height: 80px;
+
+    flex-basis: calc(100% / 3);
+}
+.jumbotron{
+    height: 400px;
+    padding-top: 30px;
+
+    background-color: rgb(180,208,231);
+}
+h1{
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: blueviolet;
+}
+.column{
+    
+    display: flex;
+    justify-content: center;
+}
+.column .col-large{
+    min-height: 250px ;
+    background-color: blue;
+
+    flex-basis: 60%;
+}
+.column .col-small{
+    min-height: 250px ;
+    background-color: pink;
+
+    flex-basis: 40%;
+}
