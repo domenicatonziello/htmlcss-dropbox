@@ -29,9 +29,6 @@ h2{
     padding: 50px 0;
     font-weight: 700;
 }
-h3{
-    padding: 20px;
-}
 h4{
     font-size: 20px;
 }
@@ -66,6 +63,17 @@ img {
 .mb-15{
     margin-bottom: 15px;
 }
+.col-large{
+    /* background-color: blue; */
+    flex-basis: 70%; 
+}
+.col-small{
+    /* background-color: pink; */
+    flex-basis: 30%;
+}
+.stretch{
+    flex-grow: 1;
+} 
 /* HEADER */
 .navbar{
     height: 80px;
@@ -105,16 +113,6 @@ img {
     background-color: rgb(180,208,231);
 }
 
-.col-large{
-    /* background-color: blue; */
-    flex-basis: 70%; 
-}
-
-.col-small{
-    /* background-color: pink; */
-    flex-basis: 30%;
-}
-
 /* MAIN */
 main > section {
   padding: 50px 10px;
@@ -136,6 +134,9 @@ main > section {
 }
 .business-plane span > .year{
     border: 1px solid grey;
+}
+.business-plane .row {
+    justify-content: space-between;
 }
 .plane-top {
     display: flex;
@@ -181,18 +182,14 @@ main > section {
 }
 
 /* PARTNER */
-.container-small > .row {
-    justify-content: space-between;
+#partner .col-small{
+    padding: 25px;
 }
-.row > .stretch{
-    flex-grow: 1;
-} 
 /* OPERATION */
 .card{
-    border: 1px dashed red;
-    flex-basis: 30%;
+    flex-basis: 33%;
     min-height: 300px;
-
+    padding: 15px;
 }
 /* CLIENTS */
 /* COMPANY */
