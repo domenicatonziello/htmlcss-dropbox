@@ -8,11 +8,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 header{
-    height: 500px;
-    margin-bottom: 200px;
-
-    /* background-color: white; */
-    /* border: 1px dashed black; */
+    height: 80px;
+    background-color: white;
+    
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 footer{
     height: 600px;
@@ -20,21 +21,30 @@ footer{
 }
 h1{
     font-size: 60px;
-    padding: 20px 0;
+    font-weight: 800px;
+    padding-bottom: 25px;
 }
 h2{
     font-size: 30px;
-    padding: 40px 0;
+    padding: 50px 0;
     font-weight: 700;
 }
 h3{
-    padding-top: 30px;
+    padding: 20px;
 }
-button{
-    padding: 10px 20px;
-    font-size: 15px;
-    border: none;
-    margin: 20px 0;
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img {
+    max-width: 100%;
+    display: block;
 }
 /* UTILITY */ 
 .container-large{
@@ -45,78 +55,74 @@ button{
     width: 800px;
     margin: 0 auto;
 }
-.bg-white{
-    background-color: white;
-    border: 1px solid gray;
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
-.bg-blue{
-    background-color: rgb(0,97,255);
-    color: white;
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-15{
+    margin-bottom: 15px;
 }
 /* HEADER */
 .navbar{
-    /* border: 1px dashed black; */
     height: 80px;
-    
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-left, .nav-right{
-    /* border: 1px dashed black; */
-    /* background-color: orange; */
-    height: 60px;
-
-    flex-basis: 37%;
+.navbar ul{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+.navbar li{
+    list-style-type: none;
     padding: 0 15px;
 }
-.jumbotron{
-    height: 550px;
-    padding-top: 30px;
-
-    background-color: rgb(180,208,231);
-}
-.column{
-    display: flex;
-    justify-content: center;
-    min-height: 250px;
-}
-.column .col-large{
-    /* background-color: blue; */
-    
-    flex-basis: 70%;
-    height: 400px ;
-}
-.col-large > img {
-    width: 90%;
-    height: 100%;
+/* BUTTONS */
+.button{
+    padding: 10px 20px;
     display: inline-block;
 }
-.column .col-small{
-    height: 300px ;
-    /* background-color: pink; */
-    position: relative;
+.btn-small{
+    padding: 5px 10px;
+}
+.secondary{
+    background-color: white;
+    border: 1px solid gray;
+}
+.primary{
+    background-color: rgb(0,97,255);
+    color: white;
+}
 
+/* JUMBOTRON */
+.jumbotron{
+    height: 600px;
+    padding-top: 70px;
+    background-color: rgb(180,208,231);
+}
+
+.col-large{
+    /* background-color: blue; */
+    flex-basis: 70%; 
+}
+
+.col-small{
+    /* background-color: pink; */
     flex-basis: 30%;
-    font-size: 15px;
 }
-.col-small > i {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 /* MAIN */
 main > section {
-  padding: 20px 10px;
+  padding: 50px 10px;
 }
 /* BUSINESS PLANE */
 .business-plane span{
-    padding: 30px 20px 30px 0;
-}
+    padding-right: 20px;
+} 
 .business-plane span > div {
     display: inline-block;
     width: 15px;
@@ -131,24 +137,56 @@ main > section {
 .business-plane span > .year{
     border: 1px solid grey;
 }
-/* PARTNER */
-.partner p {
-  padding: 20px 0;
-}
-.container-small > .row {
+.plane-top {
     display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(227,227,229);
+}
+.plane i{
+    padding: 10px 5px;
 }
 .row .plane{
-    border: 1px dashed black;
-    flex-basis: 30%;
+    border: 1px solid rgb(227,227,229);
+    flex-basis: 31%;
     min-height: 300px;
+    margin: 30px 0;
+    font-size: 13px;
+}
+.plane-bottom{
+    padding: 30px 20px;
+}
+.plane-bottom > span {
+    color: grey;
+    display: inline-block;
+}
+.line {
+    padding-bottom: 30px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(227,227,229);
+}
+.plane-bottom .row{
+    flex-wrap: nowrap;
+    align-items: baseline;
+} 
+.link{
+    text-decoration: underline;
+    color: rgb(71,50,240);
+}
+.plane-bottom .stretch{
+    text-align: center;
+}
+.fa-check{
+    color: rgb(3,101,255);
+}
 
+/* PARTNER */
+.container-small > .row {
+    justify-content: space-between;
 }
 .row > .stretch{
     flex-grow: 1;
-}
+} 
 /* OPERATION */
 .card{
     border: 1px dashed red;
